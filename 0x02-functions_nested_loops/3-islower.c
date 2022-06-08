@@ -1,7 +1,11 @@
 #include "main.h"
 /**
 * Return: Always 0 (success)
-* @c: The character to print
+* main - Entry point
+*
+*_islower - Returns 1 if c is lowercase,Returns 0 otherwise
+*/
+
 *_islower - returns 1 when value is lower case and return 0 when not
 */
 int _islower(int c)
