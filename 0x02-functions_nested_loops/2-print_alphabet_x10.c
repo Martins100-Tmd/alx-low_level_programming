@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * @print_alphabet_x10 - prints lowercase alphabet a-z 10 times
+ *print_alphabet_x10 - prints lowercase alphabet a-z 10 times
  * @c: The character to print
  *
  * Return: On success 1.
