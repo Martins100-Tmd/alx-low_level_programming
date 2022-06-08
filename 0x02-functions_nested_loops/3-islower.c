@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * Return: Always 0 (success)
- * c: The character to print
-*_islower - returns 1 when value is lower case and return 0 if else
+* Return: Always 0 (success)
+* @c: The character to print
+*_islower - returns 1 when value is lower case and return 0 when not
 */
 int _islower(int c)
 {
