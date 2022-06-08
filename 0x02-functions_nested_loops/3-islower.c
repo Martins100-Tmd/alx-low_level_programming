@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  *_islower - Returns 1 if c is lowercase,Returns 0 otherwise
- * c: The character to print
+ * @c: The character to print
  *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
