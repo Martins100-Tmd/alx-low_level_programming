@@ -1,8 +1,9 @@
 #ifndef MAIN_H
 #define MAIN_H
+
 /**
-*@main - header file for putchar.c
+*@main - header file of putchar,c
 */
 	int _putchar(char c);
-
-#endif
+	void print_alphabet(void);
+@endif
