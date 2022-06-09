@@ -8,9 +8,9 @@
  */
 int main(void)
 {
-	int x = 1;
+	int x = 0;
 
-	while (x < 101)
+	while (x <= 100)
 	{
 		if (x % 3 == 0 && x % 5 == 0)
 		{
