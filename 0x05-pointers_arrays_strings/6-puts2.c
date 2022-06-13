@@ -2,7 +2,7 @@
 
 /**
  * puts2 - writes the character c to stdout
- * @s: The pointer to print
+ * @str: The pointer to print
  *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
@@ -18,7 +18,6 @@ void puts2(char *str)
 		{
 			_putchar(str[i]);
 		}
-		
 	}
 
 	_putchar('\n');
