@@ -1,40 +1,31 @@
-#include "main.h"
+#include "holberton.h"
+
 /**
- * reverse_array - reverses the content of an array of integers
- * @a: an array of integers
- * @n: number of elements of the array
- * Return: returns void
+ * _strcmp - function that compares two strings.
+ *
+ * @s1: pointer to char source 1
+ * @s2: pointer to char source 2
+ * Return: int
  */
 
-void reverse_array(int *a, int n)
-
+int _strcmp(char *s1, char *s2)
 {
-int *start_c, *end_c, c;
-int i;
+	int i = 0;
+	int aux;
 
-
-start_c = a;
-end_c = a;
-
-
-for (i = 0; i < n - 1; i++)
-{
-end_c++;
-}
-
-
-
-
-for (i = 0; i < n / 2; i++)
-{
-
-
-c = *end_c;
-*end_c = *start_c;
-*start_c = c;
-
-start_c++;
-end_c--;
-}
-
+	while (*(s1 + i) != '\0')
+	{
+		if (*(s1 + i) > *(s2 + i))
+		{
+			aux = *(s1 + i) - *(s2 + i);
+			return (aux);
+		}
+		else if (*(s1 + i) < *(s2 + i))
+		{
+			aux = *(s1 + i) - *(s2 + i);
+			return (aux);
+		}
+		i += 1;
+	}
+	return (0);
 }
