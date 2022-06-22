@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- *strlen_recursion - print the length of a string
- *@s - memory to be counted
- *Return:void
+ *_strlen_recursion - length of a string
+ *@s: pointer block of memory to fill
+ *Return: strlen_recursion
  */
 
 int _strlen_recursion(char *s)
 {
-	if(*s == '\0')
+	if (*s == '\0')
 	{
 		return (0);
 	}
