@@ -30,4 +30,6 @@ int _sqrt_recursion(int n)
 {
 	int i = 0;
 	man(n,i);
+
+	return (0);
 }
