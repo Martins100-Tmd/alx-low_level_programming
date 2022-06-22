@@ -2,8 +2,8 @@
 /**
  * factorial - returns the factorial of a number
  * @n - pointer block of memory to fill
- * Return:factorial
- * */
+ * Return: factorial
+ */
 
 int factorial(int n)
 {
