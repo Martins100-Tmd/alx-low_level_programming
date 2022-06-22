@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * factorial - returns the factorial of a number
- * @n - number to b factorized
+ * @n - pointer block of memory to fill
  * Return:factorial
  * */
 
@@ -16,5 +16,5 @@ int factorial(int n)
 	{
 		return (-1);
 	}
-	return (n * factorial(n-1));
+	return (n * factorial(n - 1));
 }
