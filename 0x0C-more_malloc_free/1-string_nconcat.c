@@ -1,58 +1,51 @@
-#include <stdlib.h>
 #include "main.h"
+#include <stdlib.h>
 /**
- * string_nconcat - function that concatenate two strings
- * @s1 - string for which another string is 
- * concatenated into
- * @s2 - string to be concatenated into s1
- * @n - size of s2 to be concatenated
- * Return : char 
+ * string_nconcat - concatenates two strings.
+ * @s1: first string
+ * @s2: second string
+ * @n: index
+ * Return: char pointer
  */
-char *_memset(char *dest, char *src,unsigned int k)
-{
-        int i,len;
-        for (i = 0; dest[i] != '\0'; i++)
-        {
-                len = i + 1;
-        }
-        for (i = 0; i <= k; i++)
-        {
-                dest[len + i] = src[i];
-        }
-        return (dest);
-}
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int i,z,len,j,l;
-	char *p,*u="",*outside;
+	char *p;
+	unsigned int size1 = 0, size2 = 0, i;
 
 	if (s1 == NULL)
-		s1 = u;
+		s1 = "";
+
 	if (s2 == NULL)
-		s2 = u;
-	for (i = 0; s2[i] != '\0'; i++)
+		s2 = "";
+
+	while (s1[size1] != '\0')
 	{
-		z = i + 1;
+		size1++;
 	}
-	for (i = 0; s1[i] != '\0'; i++)
+
+	while (s2[size2] != '\0')
 	{
-		len = i + 1;
+		size2++;
 	}
-	if (n >= z)
-		n = z;
-	j = len + n;
-	p = malloc(j * sizeof(char));
+
+	if (n > size2)
+	n = size2;
+	p = malloc((size1 + n + 1) * sizeof(char));
 
 	if (p == NULL)
-		return NULL;
-	outside = _memset(s1, s2, n);
+		return (0);
 
-	for (i = 0; outside[i] != '\0'; i++)
+	for (i = 0; i < size1; i++)
 	{
-		p[i] = outside[i];
-		l = i + 1;
+		p[i] = s1[i];
 	}
-	s1[l] = '\0';
-	return (s1);
+
+	for (; i < (size1 + n); i++)
+	{
+		p[i] = s2[i - size1];
+	}
+	p[i] = '\0';
+
+return (p);
 }
