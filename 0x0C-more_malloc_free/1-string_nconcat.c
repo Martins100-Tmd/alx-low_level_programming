@@ -24,17 +24,23 @@ char *_memset(char *dest, char *src,unsigned int k)
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int i,len,j,l;
+	int i,z,len,j,l;
 	char *p,*u="",*outside;
 
 	if (s1 == NULL)
 		s1 = u;
 	if (s2 == NULL)
 		s2 = u;
+	for (i = 0; s2[i] != '\0'; i++)
+	{
+		z = i + 1;
+	}
 	for (i = 0; s1[i] != '\0'; i++)
 	{
 		len = i + 1;
 	}
+	if (n >= z)
+		n = z;
 	j = len + n;
 	p = malloc(j * sizeof(char));
 
