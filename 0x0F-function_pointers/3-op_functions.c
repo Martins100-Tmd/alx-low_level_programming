@@ -2,67 +2,70 @@
 #include <stdlib.h>
 
 /**
- * @num1 - first integer to be added 
- * @num2 - second integer to be added
- * op_add - add two ints
- * Return : integer
+ * op_add - sum two integers
+ *@num1:number 1
+ *@num2:number 2
+ *
+ * Return: an integer
  */
-
 int op_add(int num1, int num2)
 {
 	return (num1 + num2);
 }
 
 /**
- * @num1 - first integer to be added
- * @num2 - second integer to be added
- * op_sub - subtract two ints
- * Return : integer
- */
+* op_sub - difference between integers
+*@num1:number 1
+*@num2:number 2
+*
+* Return: an integer
+*/
 int op_sub(int num1, int num2)
 {
 	return (num1 - num2);
 }
 
 /**
- * @num1 - first integer to be added
- * @num2 - second integer to be added
- * op_mul - multiply two ints
- * Return : integer
- */
+* op_mul - multiplication between integers
+*@num1:number 1
+*@num2:number 2
+*
+* Return: an integer
+*/
 int op_mul(int num1, int num2)
 {
 	return (num1 * num2);
 }
 /**
- * @num1 - first integer to be added
- * @num2 - second integer to be added
- * op_div - divides two ints
- * Return : integer
- */
+* op_div - division  between integers
+*@num1:number 1
+*@num2:number 2
+*
+* Return: an integer
+*/
 int op_div(int num1, int num2)
 {
 	if (num2 == 0)
 	{
-		return (Error);
+		printf("Error\n");
 		exit(100);
 	}
 	return (num1 / num2);
 }
 
 /**
- * @num1 - first integer to be added
- * @num2 - second integer to be added
- * op_mod - return remainder
- * Return : integer
- */
+* op_mod - the remainder between integers
+*@num1:number 1
+*@num2:number 2
+*
+* Return: an integer
+*/
 int op_mod(int num1, int num2)
 {
-        if (num2 == 0)
+	if (num2 == 0)
 	{
-		return (Erro);
+		printf("Error\n");
 		exit(100);
 	}
-	return (num1 % num2_);
+	return (num1 % num2);
 }
-
