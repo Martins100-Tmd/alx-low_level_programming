@@ -1,12 +1,12 @@
 #include "function_pointers.h"
 /**
- * @name - funtion argument name to be printed
- * f - function to return a name
- * print_name - function to print a name
- * Return: 0
+ * print_name - prints a name
+ * @name: name's main
+ * if: void function
+ * frint - void function
  */
 
-void f(char *Name)
+void frint(char *name)
 {
 	return (Name);
 }
