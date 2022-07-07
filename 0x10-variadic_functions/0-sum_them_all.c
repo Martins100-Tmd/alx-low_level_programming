@@ -1,26 +1,22 @@
 #include <stdio.h>
 #include <stdarg.h>
-
 /**
- * sum_them_all - return sum of va_arg()
- * @n - size of args
- * Return : int
+ * sum_them_all - adds all args
+ * @n: num of args
+ * Return: result
  */
-
 int sum_them_all(const unsigned int n, ...)
 {
-	int i, sum = 0;
-	 va_list ap;
+	va_list valist;
+	unsigned int sum;
+	unsigned int i;
 
-	 if (n == 0)
-		 return (0);
-	 va_start(ap, n);
-
-	 for (i = 0; i < n; i++)
-	 {
-		sum += va_arg(ap, unsigned int);
-	 }
-	 va_end(ap);
-
-	 return (sum);
+	sum = 0;
+	va_start(valist, n);
+	if (n == 0)
+		return (0);
+	for (i = 0; i < n; i++)
+		sum += va_arg(valist, unsigned int);
+	va_end(valist);
+	return (sum);
 }
