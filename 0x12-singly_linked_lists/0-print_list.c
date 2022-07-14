@@ -3,15 +3,15 @@
 /**
  * print_list - prints all element of a list
  *
- *@h - struct
+ *@h: pointer to the list
  *
  * Return: the number of nodes
  */
 size_t print_list(const list_t *h)
 {
-	const list_t First = h;
+	const list_t *First = h;
 
-	int counter = 0;
+	size_t counter = 0;
 
 	while (First != NULL)
 	{
@@ -21,7 +21,7 @@ size_t print_list(const list_t *h)
 		}
 		else
 		{
-			printf("[0] nil\n");
+			printf("[0] (nil)\n");
 		}
 
 		counter +=1;
