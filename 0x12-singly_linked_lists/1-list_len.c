@@ -9,17 +9,16 @@
  *
  * Return: the number of nodes
  */
-
 size_t list_len(const list_t *h)
 {
 	const list_t *First = h;
-
 	size_t n = 0;
 
 	while (First)
 	{
-		n = n + 1;
+		n += 1;
 		First = First->next;
 	}
+
 	return (n);
 }
