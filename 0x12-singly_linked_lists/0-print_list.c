@@ -24,9 +24,8 @@ size_t print_list(const list_t *h)
 			printf("[0] (nil)\n");
 		}
 
-		counter +=1;
-		First=First->next;
+		counter += 1;
+		First = First->next;
 	}
-
 	return (counter);
 }
