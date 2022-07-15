@@ -9,14 +9,14 @@
 
 void print_rev(char *s)
 {
-	int len = 0, i = 0;
+	int len, i = 0;
 
 	while (s[i] != '\0')
 	{
 		i++;
 	}
 
-	for (len = i; len > 0; len--)
+	for (len = i + 1; len >= 0; len--)
 	{
 		_putchar(s[len]);
 	}
