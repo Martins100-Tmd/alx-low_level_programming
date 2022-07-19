@@ -2,7 +2,7 @@
 #include "lists.h"
 
 /**
- * sum-listint - returns the sum of data
+ * sum_listint - returns the sum of data
  *
  *@head - pointer to a list
  *
@@ -12,7 +12,6 @@
 int sum_listint(listint_t *head)
 {
 	listint_t *new = head;
-
 	int sum = 0;
 
 	if (new == NULL)
