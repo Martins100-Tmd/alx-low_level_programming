@@ -12,5 +12,5 @@ unsigned long int key_index(const unsigned char *key, unsigned long int size)
 
     Hash_pos = hash_djb2((unsigned char *)key) % size;
 
-    return Hash_pos;
+    return (Hash_pos);
 }
