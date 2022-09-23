@@ -3,6 +3,8 @@
  * hash_table_get - gets the value associated to a key
  * @ht: pointer to a hashtable
  * @key: key of a hashnode
+ *
+ * Return: NULL or a pointer
  */
 
 char *hash_table_get(const hash_table_t *ht, const char *key)
