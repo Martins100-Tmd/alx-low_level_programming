@@ -1,5 +1,4 @@
 #include "hash_tables.h"
-
 /**
  * hash_table_delete - deletes a hashtable
  * @ht: hashtable
@@ -7,11 +6,9 @@
  */
 void hash_table_delete(hash_table_t *ht)
 {
-	unsigned long int size, i = 0;
+	int i = 0;
 	hash_node_t *temp, *current_node;
-
-	size = ht->size;
-	for (i; i < size; i++)
+	for (i; i < ht->size; i++)
 	{
 		current_node = ht->array[i];
 		while (current_node)
