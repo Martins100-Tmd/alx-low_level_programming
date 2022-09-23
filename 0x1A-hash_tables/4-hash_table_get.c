@@ -1,4 +1,5 @@
 #include "hash_tables.h"
+
 /**
  * hash_table_get - gets the value associated to a key
  * @ht: pointer to a hashtable
@@ -6,27 +7,21 @@
  *
  * Return: NULL or a pointer
  */
-
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-	unsigned long int size, hashcode;
+	unsigned long int hashcode;
 
 	hash_node_t *temp;
 
-	size = ht->size;
-
 	if (ht == NULL || key == NULL)
 		return (NULL);
-	hashcode = key_index((const char *)key, size);
-	temp = ht->array[hashcode];
+	
+	hashcode = key_index((const unsigned char *)key, ht->size);
 
-	if (temp == NULL)
+	if (ht->array[hashcode] == NULL)
 		return (NULL);
 
-	if (temp && strcmp(temp->key, key) == 0)
-	{
-		return (temp->value);
-	}
+	temp = ht->array[hashcode];
 
 	while (temp)
 	{
