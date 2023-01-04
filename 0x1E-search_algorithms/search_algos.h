@@ -1,9 +1,14 @@
-#ifndef SEARCH_ALGOS_H
-#define SEARCH_ALGOS_H
+#ifndef SEARCH_A
+#define SEARCH_A
 
-/**Standard Libraries*/
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-/**Prototypes*/
+/* prototypes */
 int linear_search(int *array, size_t size, int value);
+int binary_search(int *array, size_t size, int value);
+int jump_search(int *array, size_t size, int value);
+int interpolation_search(int *array, size_t size, int value);
+
 #endif
